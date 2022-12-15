@@ -24,15 +24,14 @@ html {
 /*square*/
 .square {
   height: 600px;
-  width: 600px;
+  width: 1000px;
   border-radius: 5%;
   background-color: rgb(193, 255, 250);
 }
 
 .column {
-  width: 40.3%;
-  float: left;
-  padding: 5px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .row::after {
@@ -40,8 +39,6 @@ html {
   clear: both;
   display: table;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -74,14 +71,12 @@ input[type=submit]:hover {
 }
 
 .container {
-  padding-left: 31%;
-  padding-right: 31%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .content {
   padding: 65px;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 /*stickey pane*/
