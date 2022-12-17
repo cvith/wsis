@@ -2,7 +2,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: rgb(193, 255, 250);
 }
 
 html {
@@ -14,6 +13,35 @@ html {
   background-color: #ffffff;
   padding: 11.5px;
 }
+
+/*logo align*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*square*/
+.square {
+  height: 600px;
+  width: 600px;
+  border-radius: 5%;
+  background-color: rgb(193, 255, 250);
+}
+
+.column {
+  width: 40.3%;
+  float: left;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -52,6 +80,8 @@ input[type=submit]:hover {
 
 .content {
   padding: 65px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*stickey pane*/
@@ -63,69 +93,4 @@ input[type=submit]:hover {
 
 .sticky+.content {
   padding-top: 60px;
-}
-
-/*Styles about Navigation Bar*/
-.navbar {
-  overflow: hidden;
-  background-color: #187efa;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/*Styles about Dropdown Menus*/
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/*Styles about Help Dropdown Menu*/
-.dropdown .help {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover,
-.dropdown:hover .help {
-  background-color: #2872cb;
-}
-
-/*Styles about Dropdown Menu Contents*/
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #2872cb;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #0c4a95;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
