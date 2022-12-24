@@ -2,7 +2,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: rgb(193, 255, 250);
+  background-color: #16fe8e;
 }
 
 html {
@@ -46,29 +46,24 @@ input[type=submit]:hover {
 }
 
 .container {
-  padding-left: 31%;
-  padding-right: 31%;
+  padding: 10%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  background-color: #fff;
+  border-radius: 2.3rem;
 }
 
 .content {
-  padding: 65px;
-}
-
-/*stickey pane*/
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky+.content {
-  padding-top: 60px;
+  padding: 10%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  
 }
 
 /*Styles about Navigation Bar*/
 .navbar {
   overflow: hidden;
-  background-color: #187efa;
+  background-color: #6d6d6d;
 }
 
 .navbar a {
@@ -100,16 +95,16 @@ input[type=submit]:hover {
 
 .navbar a:hover,
 .dropdown:hover .help {
-  background-color: #2872cb;
+  background-color: rgba(0, 42, 180, 0.675);
 }
 
 /*Styles about Dropdown Menu Contents*/
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #2872cb;
+  background-color: #6d6d6d;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 42, 180, 0.675);
   z-index: 1;
 }
 
@@ -123,7 +118,7 @@ input[type=submit]:hover {
 }
 
 .dropdown-content a:hover {
-  background-color: #0c4a95;
+  background-color: rgba(0, 42, 180, 0.675);
 }
 
 .dropdown:hover .dropdown-content {
